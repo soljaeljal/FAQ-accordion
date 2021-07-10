@@ -1,0 +1,159 @@
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+}
+
+.card {
+    position: absolute;
+    top: 30%;
+    right: 8em;
+    width: 80%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    height: auto;
+    border-radius: 25px;
+    background: #fff;
+    margin: auto;
+}
+
+.woman {  
+    position: absolute; 
+    z-index: 2;
+    margin-top: -160px;
+}
+
+.shadow {
+    position: absolute; 
+    z-index: 1;
+    margin-top: -50px;
+    margin-left: 20px; 
+}
+
+.container {
+    padding: 0 25px 25px 25px;
+}
+
+.QA {
+    margin: 15px 0 15px 0;
+}
+
+.collapsible {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    height: 40px;
+    text-align: left;
+    outline: none;
+    transition: 0.3s;
+} 
+
+button:hover {
+    color:hsl(14, 88%, 65%);
+}
+
+.collapsible img {
+    float: right;
+}
+
+.answer {
+    margin-top: 20px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    display: none;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.opened {
+    font-weight: 700;
+    border-bottom: none;
+}
+
+.opened img {
+    transform: rotate(180deg);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 140px 0 0 0;
+    color: hsl(238, 29%, 16%);
+}
+
+h2 {
+    color: hsl(238, 29%, 16%);
+}
+
+@media only screen and (min-device-width: 768px) {
+    .card {
+        position: absolute;
+        width: 50vw;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        top: 30vh;
+        left: 25vw;
+    }
+
+    .images {
+        position: relative;
+        flex: 50%;
+        margin-left: -20%;
+        margin-top:0;
+        margin-right: 100px;
+        }
+
+    .container {
+        flex: 50%;
+        margin: 0 80px 30px 40px;
+        margin-top: 0;
+    }
+
+    h1 {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .woman {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 40em;
+        }
+    
+    .shadow {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 180px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 40em;
+    }
+
+}
